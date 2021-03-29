@@ -20,12 +20,12 @@ jQuery(function($) {
 		);
 	}
 
-	$('.puc-debug-bar-panel-v4 input[name="puc-check-now-button"]').click(function() {
+	$('.puc-debug-bar-panel-v4 input[name="puc-check-now-button"]').on('click', function() {
 		runAjaxAction(this, 'puc_v4_debug_check_now');
 		return false;
 	});
 
-	$('.puc-debug-bar-panel-v4 input[name="puc-request-info-button"]').click(function() {
+	$('.puc-debug-bar-panel-v4 input[name="puc-request-info-button"]').on('click', function() {
 		runAjaxAction(this, 'puc_v4_debug_request_info');
 		return false;
 	});
@@ -44,7 +44,7 @@ jQuery(function($) {
 		target.attr('id', 'debug-menu-target-puc-' + uid);
 
 		//Change the menu link ID as well and point it at the new target ID.
-		$('#puc-debug-menu-link-' + uid)
+		$('#debug-bar-menu').find('.puc-debug-menu-link-' + uid)
 			.closest('.debug-menu-link')
 			.attr('id', 'debug-menu-link-puc-' + uid)
 			.attr('href', '#' + target.attr('id'));
