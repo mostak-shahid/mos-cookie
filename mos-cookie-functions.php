@@ -50,18 +50,18 @@ function mos_cookie_ajax_scripts(){
 add_action( 'wp_enqueue_scripts', 'mos_cookie_ajax_scripts' );
 add_action( 'admin_enqueue_scripts', 'mos_cookie_ajax_scripts' );
 function mos_cookie_scripts() {
-	global $mos_cookie_option;
-	if (@$mos_cookie_option['css']) {
+	global $mos_cookie_options;
+	if (@$mos_cookie_options['css']) {
 		?>
 		<style>
-			<?php echo $mos_cookie_option['css'] ?>
+			<?php echo $mos_cookie_options['css'] ?>
 		</style>
 		<?php
 	}
-	if (@$mos_cookie_option['js']) {
+	if (@$mos_cookie_options['js']) {
 		?>
 		<style>
-			<?php echo $mos_cookie_option['js'] ?>
+			<?php echo $mos_cookie_options['js'] ?>
 		</style>
 		<?php
 	}

@@ -2,7 +2,7 @@
 /*
 Plugin Name: Mos Cookie
 Description: Base of future plugin
-Version: 0.0.2
+Version: 0.0.3
 Author: Md. Mostak Shahid
 */
 
