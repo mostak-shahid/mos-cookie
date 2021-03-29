@@ -20,11 +20,11 @@ if ( ! defined( 'MOS_COOKIE_SETTINGS' ) ) {
 	define( 'MOS_COOKIE_SETTINGS', admin_url('/options-general.php?page=mos_cookie_settings') );
 }
 
-require_once('functions/update/plugin-update-checker.php');
+require_once(plugin_dir_path( MOS_COOKIE_FILE ) . 'update/plugin-update-checker.php');
 $themeInit = Puc_v4_Factory::buildUpdateChecker(
 	'https://raw.githubusercontent.com/mostak-shahid/update/master/mos-cookie.json',
 	__FILE__,
-	'mosacademy'
+	'mos-cookie'
 );
 
 $mos_cookie_options = get_option( 'mos_cookie_options' );
