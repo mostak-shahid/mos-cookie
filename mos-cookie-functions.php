@@ -51,17 +51,17 @@ add_action( 'wp_enqueue_scripts', 'mos_cookie_ajax_scripts' );
 add_action( 'admin_enqueue_scripts', 'mos_cookie_ajax_scripts' );
 function mos_cookie_scripts() {
 	global $mos_cookie_options;
-	if (@$mos_cookie_options['css']) {
+	if (@$mos_cookie_options['mos_cookie_css']) {
 		?>
 		<style>
-			<?php echo $mos_cookie_options['css'] ?>
+			<?php echo $mos_cookie_options['mos_cookie_css'] ?>
 		</style>
 		<?php
 	}
-	if (@$mos_cookie_options['js']) {
+	if (@$mos_cookie_options['mos_cookie_js']) {
 		?>
 		<style>
-			<?php echo $mos_cookie_options['js'] ?>
+			<?php echo $mos_cookie_options['mos_cookie_js'] ?>
 		</style>
 		<?php
 	}
