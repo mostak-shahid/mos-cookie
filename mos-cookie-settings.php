@@ -42,7 +42,7 @@ function mos_cookie_section_dash_start_cb( $args ) {
     global $mos_cookie_options;
 	?>
 	<div id="mos-cookie-dashboard" class="tab-con <?php if($data['active_tab'] == 'dashboard') echo 'active';?>">
-		<?php var_dump($mos_cookie_options) ?>
+		<?php //var_dump($mos_cookie_options) ?>
 
 	<?php
 }
